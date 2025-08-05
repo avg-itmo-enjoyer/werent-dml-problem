@@ -1,0 +1,9 @@
+version: 3.8
+services:
+  redis:
+    image: redis:latest # Specifies the Redis image to use
+    container_name: redlock-redis-container # Assigns a name to the container
+    ports:
+      - "6379:6379" # Maps port 6379 on the host to port 6379 in the container
+
+networl_mode: host
